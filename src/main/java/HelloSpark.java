@@ -3,6 +3,7 @@ import static spark.Spark.*;
 
 public class HelloSpark {
 	public static void main(String[] args) {
-        get("/hello", (req, res) -> "Hello World");
-    }
+		port(9090);
+		get("/hello", (req, res) -> "Hello World");
+	}
 }
